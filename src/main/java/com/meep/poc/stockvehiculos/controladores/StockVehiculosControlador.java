@@ -15,6 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Controlador REST que expone los servicios de gestion de vehiculos.
+ * 
+ * @author Ignacio Fernandez Sanchez
+ */
 @Slf4j
 @RestController
 @RequestMapping(value = "/api/v1/vehiculos")
@@ -30,10 +35,8 @@ public class StockVehiculosControlador {
          * Servicio Rest que exponde un listado de vehiculos en base a unos parametros de
          * configuracion definidos.
          * 
-         * @param string         Identificador de posicion del vehiculo.
-         * @param string2        Identificador de posicion del vehiculo.
-         * @param companyZoneIds Listado de companias para filtrar.
-         * @param disponibles    Boolean que indica si se desean solo los vehiculos disponibles.
+         * @param disponibles Boolean que indica si se desean solo los vehiculos disponibles.
+         *
          * @return Listado de vehiculos solicitados.
          */
         @ApiOperation(value = "Obtiene un listado de vehiculos en Base a una serie de filtros disponibles",

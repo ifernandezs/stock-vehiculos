@@ -1,21 +1,22 @@
 package com.meep.poc.stockvehiculos.dominio;
 
-import org.springframework.data.annotation.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+/**
+ * Objeto de Dominio para los gestion de los datos de vehiculos.
+ * 
+ * @author Ignacio Fernandez Sanchez
+ */
 @Data
 @Builder
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class Vehiculo {
-
-    @Id
-    private String idVehiculo;
 
     private String id;
 

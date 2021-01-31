@@ -40,8 +40,8 @@ public class AdaptadorRestRecursosTest {
         @Test
         public void testObtenerRecursosLisboaOK() {
                 final List<Vehiculo> listadoVehiculos = new ArrayList<>();
-                listadoVehiculos.add(new Vehiculo("id", "VR1URHNKKKW125173", "162_40ZI28",
-                                "null DS3", "ELECTRIC_CAR", Long.valueOf(467)));
+                listadoVehiculos.add(new Vehiculo("VR1URHNKKKW125173", "162_40ZI28", "null DS3",
+                                "ELECTRIC_CAR", Long.valueOf(467)));
                 final ResponseEntity<Vehiculo[]> respuesta = new ResponseEntity<Vehiculo[]>(
                                 listadoVehiculos.toArray(new Vehiculo[listadoVehiculos.size()]),
                                 HttpStatus.OK);

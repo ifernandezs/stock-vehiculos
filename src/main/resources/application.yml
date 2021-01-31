@@ -1,11 +1,16 @@
+# Nombre y version de aplicacion. #
 spring:
    application:
       name: stock-vehiculos
 app:
    name: stock-vehiculos
    version: 0.0.1-SNAPSHOT
+
+# Puerto de despliegue del servicio. #
 server:
    port: 61012
+
+# Datos de peticion de recursos. #
 recursos:
    data:
       lowerLeftLatLon: 38.711046,-9.160096
@@ -13,6 +18,8 @@ recursos:
       companyZoneIds: 545,467,473
    url:
       lisboa: https://apidev.meep.me/tripplan/api/v1/routers/lisboa/resources
+
+# Propeiedades de configuracion de Swagger #
 swagger:
    contact:
       name: Prueba tecnica MEEP
@@ -28,10 +35,12 @@ swagger:
    docket:
       groupName: Stock Vehiculos
       basePackage: com.meep.poc
+
+# Propiedades de configuracion de Logging #
 logging:
    level:
       root: INFO
-      com.meep.poc.stockvehiculos: DEBUG
+      com.meep.poc.stockvehiculos: INFO
    pattern:
       console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr[STOCK-VEHICULOS] %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
       file: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr[STOCK-VEHICULOS] %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"

@@ -12,6 +12,12 @@ import org.springframework.stereotype.Component;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * Componente interno de negocio que realiza las operaciones de gestion el stock de vehiculos
+ * disponibles.
+ * 
+ * @author Ignacio Fernandez Sanchez
+ */
 @Slf4j
 @Component
 @AllArgsConstructor

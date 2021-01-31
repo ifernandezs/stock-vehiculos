@@ -23,6 +23,13 @@ public class StockVehiculosMapper {
     @Autowired
     private ModelMapper modelMapper;
 
+    /**
+     * Metodo que realiza el mapeo de un listado de vehiculos y un listado de objetos DTO para
+     * retornar al cliente.
+     * 
+     * @param listadoVehiculos Listado de vehiculos de dominio.
+     * @return listado de objeto DTO.
+     */
     public List<VehiculoDTO> mapearListadoVehiculosADTO(List<Vehiculo> listadoVehiculos) {
         List<VehiculoDTO> listadoVehiculosDTOs = new ArrayList<VehiculoDTO>();
         listadoVehiculos.stream().forEach(vehiculo -> {
@@ -31,6 +38,12 @@ public class StockVehiculosMapper {
         return listadoVehiculosDTOs;
     }
 
+    /**
+     * Metodo que realiza el mapeo de un objeto de dominio Vehiculo a un objeto DTO vehiculoDTO.
+     * 
+     * @param vehiculo Objeto de dominio.
+     * @return Objeto DTO.
+     */
     public VehiculoDTO mapearVehiculo(Vehiculo vehiculo) {
         VehiculoDTO vehiculoDTO = modelMapper.map(vehiculo, VehiculoDTO.class);
         return vehiculoDTO;

@@ -27,13 +27,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class AdaptadorRestRecursos {
 
-    /** Cliente sincrono para realizar solicitudes HTTP. */
     @Autowired
     private RestTemplate restTemplate;
 
-    /**
-     * Componente interno que gestiona las propiedades del adaptadorRest de recursos disponibles.
-     */
     @Autowired
     private RecursosRestProperties recursosRestProperties;
 
