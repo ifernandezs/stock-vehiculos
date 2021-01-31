@@ -7,7 +7,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 class StockVehiculosApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void testDespliegueStockVehiculos() {
+		String[] array = new String[] {};
+		StockVehiculosApplication.main(array);
 	}
 
 }

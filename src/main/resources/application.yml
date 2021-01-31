@@ -1,0 +1,38 @@
+spring:
+   application:
+      name: stock-vehiculos
+app:
+   name: stock-vehiculos
+   version: 0.0.1-SNAPSHOT
+server:
+   port: 61012
+recursos:
+   data:
+      lowerLeftLatLon: 38.711046,-9.160096
+      upperRightLatLon: 38.739429,-9.137115
+      companyZoneIds: 545,467,473
+   url:
+      lisboa: https://apidev.meep.me/tripplan/api/v1/routers/lisboa/resources
+swagger:
+   contact:
+      name: Prueba tecnica MEEP
+      url: ""
+      email: ignaciofs87@gmail.com
+   service:
+      title: Stock Vehiculos
+      description: Microservicio que gestiona el stock de vehiculos en determinadas zonas
+      version: v3
+      termsOfServiceUrl: ""
+      license: "API License"
+      licenseUrl: ""
+   docket:
+      groupName: Stock Vehiculos
+      basePackage: com.meep.poc
+logging:
+   level:
+      root: INFO
+      com.meep.poc.stockvehiculos: DEBUG
+   pattern:
+      console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr[STOCK-VEHICULOS] %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
+      file: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID}){magenta} %clr[STOCK-VEHICULOS] %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
+   file: ./logs/stock-vehiculos/logApplication.log
